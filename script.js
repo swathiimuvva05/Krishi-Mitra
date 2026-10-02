@@ -2,6 +2,7 @@ function login() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
   if (username === "krishiadmin" && password === "KM@2026") {
+    localStorage.setItem("loggedIn", "true");
     alert("Welcome to Krishi Mitra, Krishi Admin!🌱");
     window.location.href = "index.html";
   } else {
